@@ -1,0 +1,26 @@
+.s-neon-benefits {
+  .highlights {
+    h1 {
+      font: normal normal 700 40px "Poppins", sans-serif;
+      letter-spacing: -1px;
+    }
+
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        .benefit-highlight {
+          font-family: "Poppins", sans-serif;
+          color: $gray-400;
+
+          h1 {
+            font-size: 24px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

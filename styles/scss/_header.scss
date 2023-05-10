@@ -1,0 +1,102 @@
+header {
+  width: 100%;
+  height: 88px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .header-container {
+    @include container(1246px);
+
+    display: flex;
+    justify-content: space-between;
+
+    .brand {
+      display: flex;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 64px;
+
+      font-family: "Poppins", sans-serif;
+      font-size: 1.6rem;
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+
+        li {
+          a {
+            font-weight: 500;
+            color: #fff;
+
+            text-decoration: none;
+
+            transition: $transition;
+
+            &:hover {
+              color: $yellow;
+            }
+          }
+        }
+      }
+
+      .open-account {
+        padding: 16px 24px;
+        border: 1px solid #fff;
+        border-radius: 128px;
+
+        font-weight: 600;
+        color: #fff;
+
+        text-decoration: none;
+
+        transition: $transition;
+
+        &:hover {
+          background-color: #fff;
+          color: $light-blue;
+        }
+      }
+
+      .mobile-hamburguer {
+        display: none;
+      }
+    }
+  }
+
+  @include responsive(1365px) {
+    .header-container {
+      padding: 0 24px;
+
+      nav {
+        ul {
+          display: none;
+        }
+
+        .mobile-hamburguer {
+          display: initial;
+        }
+      }
+    }
+  }
+
+  @include responsive(550px) {
+    .header-container {
+      nav {
+        .open-account {
+          display: none;
+        }
+      }
+    }
+  }
+}
