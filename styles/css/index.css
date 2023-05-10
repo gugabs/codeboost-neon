@@ -433,6 +433,11 @@ header .header-container nav .mobile-hamburguer {
   }
 }
 
+.s-neon-benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .s-neon-benefits .container {
   width: 100%;
   max-width: 1246px;

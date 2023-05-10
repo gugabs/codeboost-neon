@@ -1,4 +1,8 @@
 .s-neon-benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   .container {
     @include container(1246px);
 
@@ -7,7 +11,7 @@
 
     .left-side {
       flex: 1;
-
+      
       position: relative;
 
       display: flex;
