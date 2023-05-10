@@ -433,22 +433,60 @@ header .header-container nav .mobile-hamburguer {
   }
 }
 
-.s-neon-benefits .highlights h1 {
-  font: normal normal 700 40px "Poppins", sans-serif;
-  letter-spacing: -1px;
-}
-.s-neon-benefits .highlights ul li {
+.s-neon-benefits .container {
+  width: 100%;
+  max-width: 1246px;
   display: flex;
   align-items: center;
-  gap: 40px;
 }
-.s-neon-benefits .highlights ul li .benefit-highlight {
+.s-neon-benefits .container .left-side {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.s-neon-benefits .container .left-side .app-bg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 175px;
+  z-index: -5;
+}
+.s-neon-benefits .container .right-side {
+  flex: 2;
+}
+.s-neon-benefits .container .right-side h1 {
+  font: normal normal 700 40px "Poppins", sans-serif;
+  color: #33303e;
+  letter-spacing: -1px;
+}
+.s-neon-benefits .container .right-side ul li {
+  padding: 32px 0;
+  border-bottom: 1px solid #E1E0E7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.s-neon-benefits .container .right-side ul li .benefit-highlight {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.s-neon-benefits .container .right-side ul li .benefit-highlight .info {
   font-family: "Poppins", sans-serif;
   color: #5f5c6b;
 }
-.s-neon-benefits .highlights ul li .benefit-highlight h1 {
+.s-neon-benefits .container .right-side ul li .benefit-highlight .info h2 {
   font-size: 24px;
   font-weight: 500;
+}
+.s-neon-benefits .container .right-side ul li .benefit-highlight .info p {
+  font: normal normal 400 18px "Inter", sans-serif;
+  color: #7a7786;
+}
+.s-neon-benefits .container .right-side ul li .arrow {
+  font-size: 32px;
+  color: #E1E0E7;
 }
 
 /*# sourceMappingURL=index.css.map */
