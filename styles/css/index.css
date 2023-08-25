@@ -467,7 +467,7 @@ header .header-container nav .mobile-hamburguer {
 }
 .s-neon-benefits .container .right-side ul li {
   padding: 32px 0;
-  border-bottom: 1px solid #E1E0E7;
+  border-bottom: 1px solid #e1e0e7;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -491,7 +491,35 @@ header .header-container nav .mobile-hamburguer {
 }
 .s-neon-benefits .container .right-side ul li .arrow {
   font-size: 32px;
-  color: #E1E0E7;
+  color: #e1e0e7;
+}
+@media (max-width: 550px) {
+  .s-neon-benefits .container {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .s-neon-benefits .container .right-side {
+    order: 1;
+  }
+  .s-neon-benefits .container .right-side h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .s-neon-benefits .container .right-side ul li .benefit-highlight .info h2 {
+    font-size: 20px;
+  }
+  .s-neon-benefits .container .right-side ul li .benefit-highlight .info p {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .s-neon-benefits .container .right-side ul li .arrow {
+    font-size: 32px;
+    color: #e1e0e7;
+  }
+  .s-neon-benefits .container .left-side {
+    order: 2;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
