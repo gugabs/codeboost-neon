@@ -132,10 +132,10 @@ table {
   font-size: 62.5%;
 }
 
-html {
+html,
+body {
   overflow-x: hidden;
 }
-
 
 ::-webkit-scrollbar {
   width: 10px;

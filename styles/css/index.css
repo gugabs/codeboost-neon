@@ -137,7 +137,8 @@ table {
   font-size: 62.5%;
 }
 
-html {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -434,6 +435,7 @@ header .header-container nav .mobile-hamburguer {
 }
 
 .s-neon-benefits {
+  min-height: 786px;
   display: flex;
   justify-content: center;
   align-items: center;
